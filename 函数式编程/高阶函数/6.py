@@ -24,12 +24,13 @@
 # now()
 
 
-def head(i):
-    print(i.__name__)
-    return i.__name__
-
-
-@head
+# def head(i):
+#     print(0,i.__name__)
+#     return i.__name__
+#
+#
+# @head
 def on():
-    print("this on class")
+    print('hello')
+on()
 
