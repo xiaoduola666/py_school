@@ -18,19 +18,22 @@
 #
 #
 # @log()
-# def now():
+# def now():IDE Eval Reset
 #     print('2015-3-25')
 #
 # now()
 
 
-# def head(i):
-#     print(0,i.__name__)
-#     return i.__name__
-#
-#
-# @head
-def on():
-    print('hello')
-on()
+def head(i):
+    def s(*a, **aw):
+        print('方法名称', i.__name__, a, aw)
 
+    return s
+
+
+@head
+def on(a, b):
+    print('on  内部打印', a, b)
+
+
+on(1, 2)
